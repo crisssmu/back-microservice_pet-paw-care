@@ -1,0 +1,18 @@
+
+services:
+  db:
+    container_name: IPS-PET
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: 0
+      POSTGRES_DB: pawpetcare
+    ports:
+      - 5432:5432
+
+
+
+# Database Access Credentials (replace with your actual credentials or use the default)
+# POSTGRES_USER: root
+# POSTGRES_PASSWORD: 0
